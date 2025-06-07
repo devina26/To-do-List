@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #0f0909; /* slate gray */
+    padding: 20px;
+    color: #E4E4E4; /* light gray for default text */
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #2C2C2C; /* keep container same as background for seamless dark look */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #E4E4E4; /* primary text */
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+    color: #2de9ef; /* accent 1 - light cyan */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"] {
+    padding: 8px 12px;
+    border: 1px solid #A8DADC; /* accent 1 border */
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    background-color: #2C2C2C;
+    color: #E4E4E4;
+  }
+
+  input[type="text"]::placeholder,
+  input[type="date"]::placeholder,
+  input[type="time"]::placeholder {
+    color: #f68c9f; /* accent 2 - soft pink placeholder */
+  }
+  
+  button {
+    padding: 8px 14px;
+    border: none;
+    background-color: #b792e4; /* button/CTA lavender */
+    color: #2C2C2C;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #a08ad0; /* darker lavender on hover */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #E4E4E4;
+  }
+  
+  li input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #6ecfd2; /* accent 1 for checkbox */
+  }
+  
+  li span {
+    flex-grow: 1;
+  }
+  
+  li button {
+    background-color: #FFC1CC; /* soft pink delete */
+    color: #2C2C2C;
+  }
+  
+  li button:hover {
+    background-color: #e797a3; /* a bit darker pink */
+  }
+  
+  /* Weekly layout */
+  .week {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .day {
+    background-color: #444444; /* a bit lighter than background for contrast */
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .day h3 {
+    margin-bottom: 10px;
+    color: #A8DADC; /* accent 1 for day headings */
+  }

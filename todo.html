@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <div class="container">
+    <h1>🗓️ Weekly To-Do List</h1>
+
+    <!-- Top Priorities -->
+    <section id="priorities">
+      <h2>📌 Top Priorities</h2>
+      <input type="text" id="priority-input" placeholder="Enter a priority..." />
+      <button onclick="addPriority()">Add</button>
+      <ul id="priority-list"></ul>
+    </section>
+
+    <!-- Weekly Tasks -->
+    <section id="weekly">
+      <h2>📅 Weekly Tasks</h2>
+      <div class="week">
+        <!-- Dynamically generated day columns will go here -->
+      </div>
+    </section>
+
+    <!-- Reminders -->
+    <section id="reminders">
+      <h2>⏰ Reminders</h2>
+      <input type="text" id="reminder-task" placeholder="Reminder task..." />
+      <input type="date" id="reminder-date" />
+      <input type="time" id="reminder-time" />
+      <button onclick="addReminder()">Add Reminder</button>
+      <ul id="reminder-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
